@@ -20,6 +20,12 @@
     <!-- Font: Source Code Pro Font Link -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./custom-style.css">
 
@@ -27,51 +33,154 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="custom-nav-bg py-3 px-5  d-flex justify-content-between fixed-top custom-nav-shadow">
-        <a href="#" class="">
-            <img src="./images/logo.png" alt="" width="40px">
-        </a>
-
-        <ul class="d-flex w-100 justify-content-end">
-            <li class="mx-3">
-                <a href="#" class="custom-text-secondary text-decoration-none custom-secondary-font">About me</a>
-            </li>
-            <li class="mx-3">
-                <a href="#" class="custom-text-secondary text-decoration-none custom-secondary-font">Projects</a>
-            </li>
-            <li class="mx-3">
-                <a href="#" class="custom-text-secondary text-decoration-none custom-secondary-font">Contact Me</a>
-            </li>
-        </ul>
+    <nav class="container fixed-top">
+        <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+                <div class="navbar navbar-expand-md navbar-dark py-3 custom-navbar-bg">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="Charles Lilagan Logo" width="50px">
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse mt-3" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="custom-secondary-font custom-a" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="custom-secondary-font custom-a" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="custom-secondary-font custom-a" href="#">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- End of Navbar -->
 
-    <!-- Section 1: Main Landing Page -->
-    <section id="section1" class="container-fluid p-5">
-        <h4>Hi, my name is</h4>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark py-3 px-5 custom-navbar-bg fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Charles Lilagan Logo" width="50px">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mt-3" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="custom-secondary-font custom-a" href="#">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="custom-secondary-font custom-a" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="custom-secondary-font custom-a" href="#">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <!-- End of Navbar -->
+
+    <!-- Landing Section -->
+    <section id="landing-page" class="bg-image">
+        <div class="container custom-padding-top" data-aos="fade-right" data-aos-duration="2000">
+            <div class="row">
+                <div class="col-11 mx-auto">
+                    <h6 class="custom-h4 custom-text-primary custom-secondary-font mb-3">👋🏻 Hi there! My name is</h6>
+                    <h1 class="custom-text-secondary custom-h1">Charles Lilagan.</h1>
+                    <h2 class="custom-text-sub-second custom-h2 mb-4">Developer, Designer and Musician.</h2>
+                    <p class="custom-text-sub-second custom-landing-p mb-5">
+                        I'm a Full-Stack Web Development student from Zuitt Co and, a future Software Engineer. I love designing and building things from scratch. I'm also a member of a band called <span class="custom-text-primary">Never Run</span>.
+                    </p>
+
+                    <button class="custom-secondary-font custom-button mb-5">
+                        More About Me
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- End of Section 1 -->
+    <!-- End of Landing Section -->
+
+    <!-- About Me -->
+    <section id="about-me" class="custom-padding-top2 custom-bg-color custom-text-secondary">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-8 mx-auto" data-aos="fade-right" data-aos-duration="1500">
+                    <img class="img-fluid" src="./images/pat-picture.png" alt="Charles Lilagan Photo">
+                </div>
+
+                <div class="col-11 mx-auto mt-5 text-left" data-aos="fade-right" data-aos-duration="2500">
+                    <h3 class="custom-h3">
+                        <i class="fa-regular fa-user fa-xs"></i>
+                        &nbsp; About <span class="custom-text-primary">Me</span> 
+                    </h3>
+                </div>
+
+                <div class="col-11 mx-auto mt-3" data-aos="fade-right" data-aos-duration="2500">
+                    <p class="text-justify">
+                        Hello Wolrd! My name is Charles Patrick Lilagan, a Full-Stack Web Development Student of Zuitt Co, a graduating student from AMA University taking up Bachelor of Science in Information Technlogy major in Network Administration, a self-taught Graphic Designer, and a frustrated Musician.
+                    </p>
+                    <p class="text-justify">
+                        From lines of notes on a music sheet to lines of codes on a monitor screen, I love putting harmony to whatever I'm working on.
+                    </p>
+
+                    <h4 class="custom-h4 mt-5 text-left">
+                        Technical <span class="custom-text-primary">Skills</span>
+                    </h4>
+
+                    <ul class="d-flex mt-4 justify-content-start">
+                        <li><i class="fa-brands fa-html5 fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-css3-alt fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-js-square fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-figma fa-2xl"></i></li> 
+                        <li><i class="fa-brands fa-git fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-php fa-2xl"></i></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End of About Me -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <!-- Javascript -->
+    <!-- BS Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
+    <!-- AOS Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

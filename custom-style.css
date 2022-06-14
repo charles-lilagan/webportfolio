@@ -1,0 +1,79 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-weight-black {
+    font-weight: 900;
+}
+
+.custom-weight-bold {
+    font-weight: 700;
+}
+
+.custom-weight-regular {
+    font-weight: 400;
+}
+
+.custom-secondary-font {
+    font-family:'Source Code Pro', monospace;
+    letter-spacing: -1px;
+}
+
+/* Custom Text Colors */
+.custom-text-primary {
+    color: #0a192f
+}
+
+.custom-text-secondary {
+    color: #fe5e41;
+}
+
+.custom-text-white {
+    color: #fffafb;
+}
+
+.custom-text-sub-white {
+    color: #acc0de;
+}
+
+/* Custom BG Color */
+.custom-bg-primary {
+    background: #0a192f;
+}
+
+/* Custom Link Hover */ 
+a:hover {
+    color:#fffafb;
+}
+
+/* Font Sizes */
+.custom-font-menu {
+    font-size: 1rem;
+}
+
+.custom-nav-bg {
+    background-color: rgba(10,25,47,0.9);
+}
+.custom-nav-shadow {
+    box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.2);
+}
+
+
+#section1 {
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+
